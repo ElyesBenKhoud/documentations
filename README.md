@@ -36,3 +36,11 @@
 > Overall
 
 - GraphQL is a query language and runtime that allows clients to request only the data they need, and makes it easy to request data from multiple sources in a single request. It gives the client more control over the data they receive, and allows them to easily retrieve related data without multiple round-trips to the server.
+
+> What means query in GraphQL ?
+
+- A query is a request made by the client to the server for specific data. The client specifies the fields and nested fields it wants to retrieve, and the server responds with the requested data in a JSON format. Queries are used to fetch data from the server and are one of the three main types of operation in GraphQL, along with mutations (used for creating, updating, and deleting data) and subscriptions (used for real-time data updates).
+
+> What is mutation in GraphQL ?
+
+- Mutation is a way to create, update, or delete data on the server. It is one of the three main types of operation in GraphQL, along with queries (used for fetching data) and subscriptions (used for real-time data updates). Mutations are defined on the server and can accept input arguments, just like a query. However, unlike queries, which are used to fetch data, mutations are used to change data. When a mutation is executed, it makes changes to the data on the server and returns a response, typically containing the updated data or a message indicating the result of the operation.
