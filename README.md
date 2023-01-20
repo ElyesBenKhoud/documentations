@@ -4,13 +4,13 @@
 
 > What is GraphQL ?
 
-- \_\_\_\_ - GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.
-- \_\_\_\_ - GraphQL is a query language created by Facebook in 2012 which provides a common interface between the client and the server for data fetching and manipulations.
-- \_\_\_\_ - GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
+- GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.
+- GraphQL is a query language created by Facebook in 2012 which provides a common interface between the client and the server for data fetching and manipulations.
+- GraphQL provides a complete and understandable description of the data in your API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to evolve APIs over time, and enables powerful developer tools.
 
 > How GraphQL is useful ?
 
-- \_\_\_\_ - GraphQL helps where your client needs a flexible response format to avoid extra queries and/or massive data transformation with the overhead of keeping them in sync.
+- GraphQL helps where your client needs a flexible response format to avoid extra queries and/or massive data transformation with the overhead of keeping them in sync.
 
 > What is the difference between GraphQL and REST API ?
 > -> REST (Representational State Transfer) and GraphQL are both technologies for building APIs (Application Programming Interfaces) that allow clients to request data from servers. However, they have some key differences in their design and the way they work
