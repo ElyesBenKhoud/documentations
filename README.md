@@ -25,7 +25,7 @@
 
 - REST APIs are a well-established and widely used technology, while GraphQL is a newer and more flexible alternative that is particularly well-suited to modern web and mobile applications.
 
-> What are the core concept og GraphQL ?
+> What are the core concept of GraphQL ?
 
     * Schema: A blueprint that defines the types of data that can be queried and the relationships between them.
     * Query: A request for specific fields of data from the schema.
