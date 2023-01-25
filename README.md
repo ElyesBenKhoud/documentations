@@ -96,9 +96,17 @@ schema {
 }
 ```
 
-> How UI can interact with graphQL server ?
+> How can UI interact with graphQL server ?
 
 - There are a few ways to link a UI with a GraphQL server, but one common approach is to use a GraphQL client library in the UI to handle the communication with the server. Examples of such libraries include Apollo Client and Relay. These libraries provide a way to easily make GraphQL queries and mutations from the UI and handle the results, including caching and updating the UI when the data changes. Additionally, you can link to the graphQL server via a simple HTTP request, using fetch or axios, with the query or mutation as the request body.
 
 > Talking about apollo client for a while :
 > ![apolloClient](https://miro.medium.com/max/1024/0*NGXzvGyEpkaJW4ZY)
+
+> What is apollo client ?
+
+- Apollo Client is a popular JavaScript library that helps you use GraphQL in your app. It provides a simple and intuitive API for building GraphQL queries, as well as caching and managing the results of those queries.
+
+- It provides an easy way to integrate GraphQL into a variety of different types of JavaScript applications, including web apps, mobile apps, and server-side applications. It also provides a number of useful features, such as automatic cache management and real-time subscriptions, which can make it easier to build performant and responsive apps that use GraphQL.
+
+- Overall, Apollo Client is a useful tool for anyone looking to use GraphQL in their JavaScript-based app, and it is often mentioned in the context of GraphQL because it is a popular choice for integrating GraphQL into a variety of different types of applications.
