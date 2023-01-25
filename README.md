@@ -44,3 +44,28 @@
 > What is mutation in GraphQL ?
 
 - Mutation is a way to create, update, or delete data on the server. It is one of the three main types of operation in GraphQL, along with queries (used for fetching data) and subscriptions (used for real-time data updates). Mutations are defined on the server and can accept input arguments, just like a query. However, unlike queries, which are used to fetch data, mutations are used to change data. When a mutation is executed, it makes changes to the data on the server and returns a response, typically containing the updated data or a message indicating the result of the operation.
+
+> What means resolvers in GraphQL ?
+
+- A GraphQL resolver is a function that is responsible for fetching the data for a single field in a GraphQL API. Each field in a GraphQL query or mutation is matched to a resolver function on the server, which is responsible for returning the data for that field.
+
+- A resolver function takes in four arguments:
+
+1.  obj: the previous object, it can be the root object or an object from a previous resolver
+2.  args: an object containing the arguments passed to the field in the query
+3.  context: an object that holds the context of the request, such as the currently logged-in user or the data loaders
+4.  info: an object containing information about the current execution state, including the current field and the entire query.
+
+```js
+const resolvers = {
+  Query: {
+    user: (_, { id }, { dataSources }) => dataSources.userAPI.getUser({ id }),
+  },
+  User: {
+    username: (user) => user.username,
+  },
+};
+```
+
+- The resolver function can fetch data from a database, a cache, or any other data source and should return the data as a plain JavaScript object that matches the type of the field.
+  For example, if we have a User type and a field username in our schema and we want to fetch the username from a database based on the id passed as an argument
