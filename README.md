@@ -56,6 +56,9 @@
 3.  context: an object that holds the context of the request, such as the currently logged-in user or the data loaders
 4.  info: an object containing information about the current execution state, including the current field and the entire query.
 
+- The resolver function can fetch data from a database, a cache, or any other data source and should return the data as a plain JavaScript object that matches the type of the field.
+  For example, if we have a User type and a field username in our schema and we want to fetch the username from a database based on the id passed as an argument.
+
 ```js
 const resolvers = {
   Query: {
@@ -67,8 +70,8 @@ const resolvers = {
 };
 ```
 
-- The resolver function can fetch data from a database, a cache, or any other data source and should return the data as a plain JavaScript object that matches the type of the field.
-  For example, if we have a User type and a field username in our schema and we want to fetch the username from a database based on the id passed as an argument.
+- In this example, the resolver function username takes the user object returned by user resolver and returns the username field.
+  It's important to note that the resolver functions are not only used to fetch data but also to perform any additional logic or data transformation before returning the data.
 
 > What is graphQL schema ?
 
